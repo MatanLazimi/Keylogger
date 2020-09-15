@@ -1,0 +1,8 @@
+[Unit]
+Description=TCP/UDP server service file
+[Service]
+AmbientCapabilities=CAP_SYS_RAWIO
+User=nobody
+ExecStart=/usr/local/bin/prj/TCP_SERVER \a
+[Install]
+WantedBy=multi-user.target

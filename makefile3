@@ -1,0 +1,1 @@
+gcc -o UDP_SERVER udp_server.c -lpthread files.c tree.c argsList.c

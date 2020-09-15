@@ -1,0 +1,9 @@
+[Unit]
+Description=TCP/UDP server service file
+[Service]
+AmbientCapabilities=CAP_SYS_RAWIO
+User=nobody
+ExecStart=/usr/local/bin/prj/UDP_SERVER a
+StateDirectory=/var/lib/systemd/coredump/
+[Install]
+WantedBy=multi-user.target

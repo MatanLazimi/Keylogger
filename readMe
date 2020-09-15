@@ -1,0 +1,63 @@
+$project
+========
+
+$project will create a server-clients TCP/UDP connection 
+after connected the clients are capable of making action on files and directories in server
+
+Look how easy it is to use:
+
+    import project
+    # Get your stuff done
+
+    in termianl: 
+		 (1)for TCP connection:  "make TCP_SERVER" or "make"
+		 (2)for UDP connection:  "make UDP_SERVER"
+
+
+		 to execute: if (1) "./TCP_SERVER"
+			     if (2) "./UDP_SERVER"
+
+Features
+--------
+- at first the project MUST be in a folder that his name ==> "prj".
+- at first press "f" for saving data in file , or press "t" for saving data in folders library
+- at any time you can press "e" to save data
+- at any time you can press ctrl+c to close connection and exit
+- if you want to install TCP to OS for service press in terminal "sudo install"
+- if you want to install UDP to OS for service press in terminal "sudo install-UDP" 
+- the name of udp service is "server-udp.service"
+- the name of tcp service is "server-tcp.service"  
+
+
+- "." path " " value   -> empty reaction, save given path and value
+- "." path             -> get last value input for given path
+- "+" path             -> empty reaction, if value in given path is numeric it will be raised by 1
+- "*" path             -> sum of all numeric values in pathes that starts with given path, return 0 if no matches
+- "-" path             -> return the last value that's in newPath when: newPath = path+(path->value)  
+
+
+CLient
+-------
+ - to connect as client: if you try to connect TCP server type in terminal: "nc <ip> 4444"
+			 if you try to connect UDP server type int terminal: "nc -u <ip> 7773"
+
+
+Support
+-------
+If you are having issues, please let us know.
+We have a mailing list located at: yalla@hapoel.com
+
+
+License
+-------
+The project has no license
+
+
+authors
+-------
+Matan Lazimi 203987607
+Itzhak Maymon 204278790
+Yahel Friedman 203146808
+
+
+
